@@ -3,7 +3,7 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
-  return array [0];
+  return array[0];
 }
 
 function devolverUltimoElemento(array) {
@@ -16,7 +16,6 @@ function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
   return array.length;
-  var nueva array = [];
 }
 
 function incrementarPorUno(array) {
@@ -25,16 +24,16 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   for (var i = 0; i < array.length; i ++){
-    nueva array.push (array[i] + 1);
+    nuevaArray[i] (array[i] + 1);
   }
-  return nueva array; 
+  return nuevaArray; 
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array.push (elemento);
+  array [array.length] = elemetno;
   return array;
 }
 
@@ -61,7 +60,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for (var = 0; i < array.length; i ++){
-    if (array [i]=== elemento){
+    if (array [i] === elemento){
       return true;
     }
   }
@@ -83,8 +82,8 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var promedio = agragar numeros(resultadostest)/resultsdostest.length;
-  return promedio;
+  var promedio = agragarNumeros(resultadosTest)/resultsdosTest.length;
+  retur promedio;
 }
 
 function numeroMasGrande(numeros) {
