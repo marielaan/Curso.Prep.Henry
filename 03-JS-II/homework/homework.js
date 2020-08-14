@@ -7,8 +7,8 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x > y) {
     return x;
-  }
-  return y;
+}
+return y;
 }
 
 function saludo(idioma) {
@@ -28,6 +28,8 @@ function saludo(idioma) {
     return 'Hola!';
   }
 }
+  
+
 
 function esDiezOCinco(numero) {
     // Devuelve "true" si "numero" es 10 o 5
@@ -52,6 +54,7 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
   return numero % 1 === 0;
+ 
 }
 
 function fizzBuzz(numero) {
@@ -59,10 +62,10 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero % 15 === 0) return 'fizzbuzz';
-  if(numero % 3 === 0) return 'fizz';
-  if(numero % 5 === 0) return 'buzz';
-  return numero;
+   if(numero % 15 === 0) return 'fizzbuzz';
+   if(numero % 3 === 0) return 'fizz';
+   if(numero % 5 === 0) return 'buzz';
+   return numero;
 }
 
 function esPrimo(numero) {
@@ -71,14 +74,10 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if(numero < 2){
-    return false;
-  }
-  if(numero === 2){
-   return true;
-  }
-  for(var i = 2; i < numero; i ++){
-    if(numero % 1 === 0){
+  if( numero < 2) return false;
+  if(numero === 2) return true;
+  for(var i = 2; i < numero; i++) {
+    if(numero % i === 0) {
       return false;
     }
   }
