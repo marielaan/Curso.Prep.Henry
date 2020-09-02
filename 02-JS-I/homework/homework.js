@@ -28,33 +28,37 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  let string = "str";
+ return "str";
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x + y;
+  var x = 2;
+  var y = 3;
+  return suma;
 }
 
 function resta(x, y) {
   // Resta "x" de "y" y devuelve el valor
   // Tu código:
-  return x - y;
+  var x, y;
+  return resta;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return x * y;
+  var x, y;
+  return multiplica;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
- 
-  return divide;
+  var x, y;
+ return divide;
 }
 
 function sonIguales(x, y) {
@@ -72,7 +76,11 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código: 
-  return str1.length === str2.length;
+   if(str1 === str2){
+     return true;
+   }else{
+     return false;
+   }
  }
 
 function menosQueNoventa(num) {
@@ -90,7 +98,11 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  return num > 50;
+  if(num > 50){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 function obtenerResto(x, y) {
@@ -156,7 +168,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
- return str + '!';
+  return str + '!';
 } 
 
 function combinarNombres(nombre, apellido) {
